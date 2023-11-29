@@ -7,9 +7,13 @@ while True:
     user_input = input("Enter your equation > ")
     tokens = user_input.split(" ")
 
-    if "q" in tokens:
+    if "q" in tokens or "quit" in tokens:
         print("You will exit.")
         break
+
+    # elif "quit" in tokens:
+    #     print("Alternate exit")
+    #     break
 
     elif len(tokens) < 2:
         print("Not enough inputs.")
